@@ -166,3 +166,34 @@ header .introduction{
 }
 /* fine seconda sezione */
 
+
+
+/* terza sezione */
+.container.third-section{
+    padding: 20px;
+}
+
+.third-section h2{
+    margin-bottom: 20px;
+}
+
+.third-section{
+    border: 1px solid black;
+    /* test */
+}
+
+
+#business-description{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 50px;
+}
+
+#business-description .description{
+    width: calc(100% / 3);
+    height: 150px;
+    border: 1px solid black;
+    /* test */
+}
+/* fine terza sezione */
