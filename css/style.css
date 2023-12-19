@@ -7,7 +7,7 @@
 
 body > *{
     border: 1px solid red;
-    background-color: rgba(100%, 0%, 0%, 0.2);
+    /* background-color: rgba(100%, 0%, 0%, 0.2); */
 }
 
 /* elementi comuni a tutta la pagina */
@@ -23,8 +23,18 @@ body > *{
 
     width: 60%;
 }
-/* fine elementi comuni alla pagina */
 
+.container{
+    /* margin-bottom: 50px; */
+    height: 500px;
+    border: 1px solid black;
+    /* test */
+
+    margin: 0px auto 50px;
+
+    max-width: 50%;
+}
+/* fine elementi comuni alla pagina */
 
 
 
@@ -103,9 +113,32 @@ header .introduction{
 /* fine sezione header */
 
 
-/* sezione main */
 
-/* fine sezione main */
+/* prima sezione */
+.container.first-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#buy-options{
+    display: flex;
+}
+
+#buy-options .type-option{
+    width: calc(100% / 3);
+    height: 300px;
+    border: 1px solid black;
+    /* test */
+}
+
+#sell-office{
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    /* test */
+}
+/* fine prima sezione */
 
 
 
