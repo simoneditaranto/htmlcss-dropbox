@@ -10,6 +10,24 @@ body > *{
     background-color: rgba(100%, 0%, 0%, 0.2);
 }
 
+/* elementi comuni a tutta la pagina */
+.container-big{
+    height: 420px;
+    border: 1px solid green;
+    /* test */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: auto;
+
+    width: 60%;
+}
+/* fine elementi comuni alla pagina */
+
+
+
+
 /* sezione navbar */
 nav{
     display: flex;
@@ -34,4 +52,60 @@ nav .links ul{
     list-style-type: none;
 }
 /* fine sezione navbar */
+
+
+
+/* sezione header */
+header{
+    margin-bottom: 90px;
+
+    background-color: #B4D0E7;
+}
+
+header .title{
+    width: 100%;
+    height: 100px;
+    border: 1px solid purple;
+    /* test */
+
+    margin-top: 60px;
+}
+
+header .introduction{
+    width: 100%;
+    height: 230px;
+    border: 1px solid purple;
+    /* test */
+
+    display: flex;
+
+    position: relative;
+}
+
+#introduction-text{
+    width: 30%;
+    border: 1px solid rgb(80, 1, 80);
+    /* test */
+}
+
+#introduction-image{
+    width: 70%;
+    height: 100%;
+    border: 1px solid rgb(80, 1, 80);
+    /* test */
+
+    /* flex-grow: 1; */
+
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+}
+/* fine sezione header */
+
+
+/* sezione main */
+
+/* fine sezione main */
+
+
 
