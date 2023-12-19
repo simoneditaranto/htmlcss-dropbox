@@ -12,7 +12,6 @@ body > *{
 
 /* elementi comuni a tutta la pagina */
 .container-big{
-    height: 740px;
     border: 1px solid green;
     /* test */
 
@@ -37,6 +36,14 @@ body > *{
 nav{
     display: flex;
     justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    background-color: white;
 }
 
 nav .links{
@@ -62,13 +69,13 @@ nav .links ul{
 
 /* sezione header */
 header{
+    margin-top: 47px;
     margin-bottom: 90px;
 
     background-color: #B4D0E7;
 }
 
 header .title{
-    width: 100%;
     height: 170px;
     border: 1px solid purple;
     /* test */
@@ -77,14 +84,11 @@ header .title{
 }
 
 header .introduction{
-    width: 100%;
     height: 395px;
     border: 1px solid purple;
     /* test */
 
     display: flex;
-
-    position: relative;
 }
 
 #introduction-text{
@@ -94,16 +98,12 @@ header .introduction{
 }
 
 #introduction-image{
-    width: 70%;
-    height: 100%;
     border: 1px solid rgb(80, 1, 80);
     /* test */
 
-    /* flex-grow: 1; */
+    flex-grow: 1;
 
-    position: absolute;
-    right: 0;
-    bottom: -40px;
+    transform: translateY(40px);
 }
 /* fine sezione header */
 
