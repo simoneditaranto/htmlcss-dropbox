@@ -21,7 +21,7 @@ body > *{
 
     margin: auto;
 
-    width: 60%;
+    width: 1200px;
 }
 
 .container{
@@ -32,7 +32,7 @@ body > *{
 
     margin: 0px auto 50px;
 
-    max-width: 50%;
+    width: 1000px;
 }
 /* fine elementi comuni alla pagina */
 
@@ -197,3 +197,51 @@ header .introduction{
     /* test */
 }
 /* fine terza sezione */
+
+
+
+/* quarta sezione */
+#designit{
+    margin-bottom: 50px;
+}
+
+#designit #top{
+    display: flex;
+}
+
+.container-small{
+    width: calc(100% / 3);
+    height: 360px;
+    border: 1px solid violet;
+    /* test */
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-small .company{
+    width: calc(100% / 2);
+    height: 50%;
+    border: 1px solid rgb(143, 9, 143);
+    /* test */
+}
+
+#designit #bottom{
+    padding: 60px;
+
+    background-color: #B4D0E7;
+}
+
+#designit #bottom .free-period{
+    border: 1px solid black;
+    /* test */
+    
+    display: flex;
+    justify-content: space-between;
+
+    margin: auto;
+
+    width: 1000px;
+}
+/* fine quarta sezione */
+
