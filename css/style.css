@@ -119,6 +119,8 @@ header .introduction{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    padding: 20px;
 }
 
 #buy-options{
@@ -141,4 +143,26 @@ header .introduction{
 /* fine prima sezione */
 
 
+
+/* seconda sezione */
+.container.second-section{
+    display: flex;
+
+    padding: 20px;
+}
+
+.second-section .partner-image{
+    border: 1px solid black;
+    /* test */
+
+    flex-grow: 1;
+}
+
+.second-section .partner-text{
+    border: 1px solid black;
+    /* test */
+
+    width: 30%;
+}
+/* fine seconda sezione */
 
