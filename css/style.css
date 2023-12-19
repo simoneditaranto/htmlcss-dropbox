@@ -12,12 +12,9 @@ body > *{
 
 /* elementi comuni a tutta la pagina */
 .container-big{
-    height: 420px;
+    height: 740px;
     border: 1px solid green;
     /* test */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
     margin: auto;
 
@@ -25,8 +22,6 @@ body > *{
 }
 
 .container{
-    /* margin-bottom: 50px; */
-    height: 500px;
     border: 1px solid black;
     /* test */
 
@@ -74,16 +69,16 @@ header{
 
 header .title{
     width: 100%;
-    height: 100px;
+    height: 170px;
     border: 1px solid purple;
     /* test */
 
-    margin-top: 60px;
+    margin: 100px 0 75px;
 }
 
 header .introduction{
     width: 100%;
-    height: 230px;
+    height: 395px;
     border: 1px solid purple;
     /* test */
 
@@ -118,7 +113,7 @@ header .introduction{
 .container.first-section{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 30px;
 
     padding: 20px;
 }
@@ -152,6 +147,7 @@ header .introduction{
 }
 
 .second-section .partner-image{
+    height: 500px;
     border: 1px solid black;
     /* test */
 
@@ -244,4 +240,54 @@ header .introduction{
     width: 1000px;
 }
 /* fine quarta sezione */
+
+
+
+/* sezione domande frequenti */
+.container h3{
+    margin-bottom: 70px;
+}
+
+.questions ul{
+    list-style-type: none;
+}
+
+.questions ul li{
+    border-bottom: 1px solid black;
+
+    margin: 30px 0 30px;
+}
+/* fine sezione domande frequenti */
+
+
+
+/* sezione footer */
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer .container-big{
+    height: 570px;
+    /* test */
+}
+
+footer .footer-links{
+    height: 250px;
+    border: 1px solid red;
+    /* test */
+
+    margin: 100px 0 115px;
+}
+
+footer hr{
+    width: 120px;
+}
+
+footer #language{
+    margin-top: 50px;
+}
+/* fine sezione footer */
+
+
 
