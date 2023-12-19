@@ -4,3 +4,34 @@
     box-sizing: border-box;
 }
 /* reset */
+
+body > *{
+    border: 1px solid red;
+    background-color: rgba(100%, 0%, 0%, 0.2);
+}
+
+/* sezione navbar */
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .links{
+    width: 20%;
+    height: 45px;
+    border: 1px solid green;
+    /* test */
+}
+
+nav .links ul{
+    line-height: 45px;
+    /* test */
+    /* solo per centrare il testo, l'altezza del contenitore andrà poi eliminata */
+
+    display: flex;
+    justify-content: space-between;
+
+    list-style-type: none;
+}
+/* fine sezione navbar */
+
