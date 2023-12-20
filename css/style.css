@@ -326,14 +326,9 @@ hr{
 
 
 
-/* terza sezione */
-.third-section h2{
+/* sezione dropbox business */
+.dropbox-business h2{
     margin-bottom: 20px;
-}
-
-.third-section{
-    border: 1px solid black;
-    /* test */
 }
 
 #business-description{
@@ -341,16 +336,32 @@ hr{
     flex-wrap: wrap;
     gap: 90px 50px;
 
-    margin-bottom: 50px;
+    margin-bottom: 210px;
 }
 
 #business-description .description{
     width: calc(100% / 3 - 50px / 3 * 2);
-    height: 150px;
-    border: 1px solid black;
-    /* test */
+
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
 }
-/* fine terza sezione */
+
+#business-description .description img{
+    width: 100%;
+}
+
+#more{
+    margin-bottom: 65px;
+
+    font-size: 32px;
+    font-weight: bold;
+}
+
+#underline{
+    text-decoration: underline;
+}
+/* fine dropbox business */
 
 
 
