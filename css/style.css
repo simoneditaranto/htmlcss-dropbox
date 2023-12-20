@@ -283,32 +283,46 @@ hr{
 #sell-office .bot .left p{
     margin-bottom: 30px;
 }
-
-
 /* fine piani business */
 
 
 
-/* seconda sezione */
-.container .second-section{
+/* seconda "trova un partner" */
+.container .partnership{
     display: flex;
+
+    margin-bottom: 165px;
 }
 
-.second-section .partner-image{
-    height: 500px;
-    border: 1px solid black;
-    /* test */
-
-    flex-grow: 1;
+.partnership .partner-image{
+    width: 70%;
 }
 
-.second-section .partner-text{
-    border: 1px solid black;
-    /* test */
+.partnership .partner-image img{
+    width: 100%;
+}
+
+.partnership .partner-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+
+    padding-top: 50px;
+    padding-left: 55px;
 
     width: 30%;
 }
-/* fine seconda sezione */
+
+.partnership .partner-text .btn{
+    border: 1px solid black;
+
+    text-align: center;
+
+    color: black;
+    background-color: white;
+}
+/* fine "trova un partner" */
 
 
 
