@@ -9,10 +9,6 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-body > *{
-    border: 1px solid red;
-}
-
 /* elementi comuni a tutta la pagina */
 .container-big{
     margin: auto;
@@ -21,9 +17,6 @@ body > *{
 }
 
 .container{
-    /* border: 1px solid black; */
-    /* test */
-
     margin: 0px auto 50px;
 
     max-width: 1000px;
@@ -34,6 +27,10 @@ body > *{
 
     color: white;
     background-color: #0061FF;
+}
+
+ul{
+    list-style-type: none;
 }
 
 a{
@@ -68,8 +65,6 @@ nav ul{
     display: flex;
     align-items: center;
     gap: 38px;
-
-    list-style-type: none;
 }
 
 nav ul li a{
@@ -482,10 +477,6 @@ hr{
     font-size: 30px;
 }
 
-.questions ul{
-    list-style-type: none;
-}
-
 .questions ul li{
     display: flex;
     justify-content: space-between;
@@ -506,18 +497,24 @@ footer{
     color: white;
 }
 
-footer .container-big{
-    height: 570px;
-    border: 1px solid green;
-    /* test */
+footer .footer-links{
+    padding-top: 100px;
+    margin-bottom: 118px;
+
+    display: flex;
+    justify-content: space-between;
 }
 
-footer .footer-links{
-    height: 250px;
-    border: 1px solid red;
-    /* test */
+footer .link-list h3{
+    padding-bottom: 32px;
+}
 
-    margin: 100px 0 115px;
+footer .link-list ul li{
+    padding-bottom: 18px;
+}
+
+footer .link-list ul li a{
+    color: white;
 }
 
 footer hr{
@@ -525,7 +522,14 @@ footer hr{
 }
 
 footer #language{
-    margin-top: 50px;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    
+
+    padding-bottom: 50px;
+
+    color: #929595;
 }
 /* fine sezione footer */
 
