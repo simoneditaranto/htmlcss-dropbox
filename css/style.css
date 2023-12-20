@@ -365,9 +365,11 @@ hr{
 
 
 
-/* quarta sezione */
+/* designit */
 #designit{
     margin-bottom: 50px;
+
+    width: 100vw;
 }
 
 #designit #top{
@@ -377,18 +379,66 @@ hr{
 .container-small{
     width: calc(100vw / 3);
     height: calc(100vw / 3);
-    border: 1px solid violet;
-    /* test */
 
     display: flex;
     flex-wrap: wrap;
 }
 
 .container-small .company{
+    position: relative;
+
     width: 50%;
-    height: 50%;
-    border: 1px solid rgb(143, 9, 143);
-    /* test */
+}
+
+.container-small.left .company:nth-child(1){
+    background-color: #A2D39B;
+}
+
+.container-small.left .company:nth-of-type(2){
+    background-color: #61082B;
+}
+
+.container-small.left .company:nth-of-type(3){
+    background-color: #0093CE;
+}
+
+.container-small.left .company:nth-of-type(4){
+    background-color: #FF1C1C;
+}
+
+.container-small .company img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 150px;
+
+    filter: invert(100%);
+}
+
+.container-small.right .company:nth-child(1){
+    background-color: #D5001F;
+}
+
+.container-small.right .company:nth-of-type(2){
+    background-color: #B4D0E7;
+}
+
+.container-small.right .company:nth-of-type(3){
+    background-color: #0D2481;
+}
+
+.container-small.right .company:nth-of-type(4){
+    background-color: #FFD830;
+}
+
+.container-small.center{
+    padding: 0 48px;
+}
+
+.container-small.center img{
+    width: 270px;
 }
 
 #designit #bottom{
@@ -397,10 +447,7 @@ hr{
     background-color: #B4D0E7;
 }
 
-#designit #bottom .free-period{
-    border: 1px solid black;
-    /* test */
-    
+#designit #bottom .free-period{    
     display: flex;
     justify-content: space-between;
 
@@ -408,7 +455,18 @@ hr{
 
     width: 1000px;
 }
-/* fine quarta sezione */
+
+#bottom .free-period h2{
+    color: #60052F;
+}
+
+#bottom .free-period .btn{
+    padding: 8px 50px;
+
+    color: black;
+    background-color: white;
+}
+/* fine designit */
 
 
 
