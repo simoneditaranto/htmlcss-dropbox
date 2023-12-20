@@ -7,7 +7,6 @@
 
 body > *{
     border: 1px solid red;
-    /* background-color: rgba(100%, 0%, 0%, 0.2); */
 }
 
 /* elementi comuni a tutta la pagina */
@@ -17,16 +16,24 @@ body > *{
 
     margin: auto;
 
-    width: 1200px;
+    max-width: 1200px;
 }
 
 .container{
     border: 1px solid black;
     /* test */
 
+    padding: 20px;
     margin: 0px auto 50px;
 
-    width: 1000px;
+    max-width: 1000px;
+}
+
+.btn{
+    padding: 8px 16px;
+
+    color: white;
+    background-color: #0061FF;
 }
 /* fine elementi comuni alla pagina */
 
@@ -41,27 +48,33 @@ nav{
     top: 0;
     left: 0;
 
+    padding: 28px 18px;
+
     width: 100%;
 
     background-color: white;
 }
 
-nav .links{
-    width: 20%;
-    height: 45px;
-    border: 1px solid green;
-    /* test */
+nav > div{
+    display: flex;
 }
 
-nav .links ul{
-    line-height: 45px;
-    /* test */
-    /* solo per centrare il testo, l'altezza del contenitore andrà poi eliminata */
-
+nav ul{
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    gap: 38px;
 
     list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+
+    color: #4A4A4A;
+}
+
+#start{
+    margin-left: -20px;
 }
 /* fine sezione navbar */
 
@@ -115,15 +128,17 @@ header .introduction{
     flex-direction: column;
     gap: 30px;
 
-    padding: 20px;
+    
 }
 
 #buy-options{
     display: flex;
+    justify-content: space-between;
+    /* gap: 50px; */
 }
 
 #buy-options .type-option{
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 50px / 3 * 2);
     height: 300px;
     border: 1px solid black;
     /* test */
@@ -142,8 +157,6 @@ header .introduction{
 /* seconda sezione */
 .container.second-section{
     display: flex;
-
-    padding: 20px;
 }
 
 .second-section .partner-image{
@@ -165,10 +178,6 @@ header .introduction{
 
 
 /* terza sezione */
-.container.third-section{
-    padding: 20px;
-}
-
 .third-section h2{
     margin-bottom: 20px;
 }
@@ -178,16 +187,16 @@ header .introduction{
     /* test */
 }
 
-
 #business-description{
     display: flex;
     flex-wrap: wrap;
+    gap: 90px 50px;
 
     margin-bottom: 50px;
 }
 
 #business-description .description{
-    width: calc(100% / 3);
+    width: calc(100% / 3 - 50px / 3 * 2);
     height: 150px;
     border: 1px solid black;
     /* test */
@@ -206,8 +215,8 @@ header .introduction{
 }
 
 .container-small{
-    width: calc(100% / 3);
-    height: 360px;
+    width: calc(100vw / 3);
+    height: calc(100vw / 3);
     border: 1px solid violet;
     /* test */
 
@@ -216,7 +225,7 @@ header .introduction{
 }
 
 .container-small .company{
-    width: calc(100% / 2);
+    width: 50%;
     height: 50%;
     border: 1px solid rgb(143, 9, 143);
     /* test */
