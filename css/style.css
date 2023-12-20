@@ -15,19 +15,15 @@ body > *{
 
 /* elementi comuni a tutta la pagina */
 .container-big{
-    border: 1px solid green;
-    /* test */
-
     margin: auto;
 
     max-width: 1200px;
 }
 
 .container{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     /* test */
 
-    padding: 20px;
     margin: 0px auto 50px;
 
     max-width: 1000px;
@@ -98,8 +94,6 @@ header{
 header .container-big{
     position: relative;
     bottom: -60px;
-
-    padding: 0px 12px;
 }
 
 h1{
@@ -144,40 +138,159 @@ header .introduction{
 
 
 
-/* prima sezione */
-.container.first-section{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+/* piani business */
+#business-plans h2{
+    margin-bottom: 70px;
 
-    
+    font-size: 32px;
+}
+
+#business-plans #check{
+    margin-bottom: 50px;
+}
+
+.radio-text{
+    margin-right: 48px;
 }
 
 #buy-options{
     display: flex;
     justify-content: space-between;
-    /* gap: 50px; */
+
+    margin-bottom: 50px;
 }
 
-#buy-options .type-option{
-    width: calc(100% / 3 - 50px / 3 * 2);
-    height: 300px;
-    border: 1px solid black;
-    /* test */
+.type-option{
+    padding: 0 25px;
+
+    width: calc(100% / 3 - 48px / 3 * 2);
+
+    border: 1px solid #BEBAB8;
+}
+
+.type-option .type{
+    padding: 15px;
+    margin-bottom: 35px;
+
+    text-align: center;
+
+    border-bottom: 1px solid #BEBAB8;
+}
+
+.type-option h3{
+    margin-bottom: 20px;
+}
+
+.type-option .price{
+    margin-bottom: 18px;
+
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.type-option .month{
+    margin-bottom: 50px;
+
+    color: #BEBAB8;
+}
+
+.type-option .info {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    margin-bottom: 50px;
+}
+
+.type-option .info div{
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.type-option .btn{
+    margin-bottom: 36px;
+
+    text-align: center;
+}
+
+.type-option .buy{
+    margin-bottom: 40px;
+}
+
+.type-option .buy a{
+    text-decoration: underline;
+}
+
+hr{
+    margin-bottom: 52px;
+
+    width: 20%;
+
+    color: #BEBAB8;
+}
+
+.type-option .highlights-plan{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    margin-bottom: 54px;
+}
+
+.type-option .highlights-plan div{
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.type-option .highlights-plan .fa-solid{
+    color: #0461FF;
 }
 
 #sell-office{
-    width: 100%;
-    height: 50px;
-    border: 1px solid black;
-    /* test */
+    padding: 0 30px;
+    margin-bottom: 150px;
+
+    border: 1px solid #BEBAB8;
 }
-/* fine prima sezione */
+
+#sell-office .mini-title{
+    padding: 12px;
+    margin-bottom: 45px;
+    border-bottom: 1px solid #BEBAB8;
+
+    text-align: center;
+}
+
+#sell-office .bot{
+    display: flex;
+    justify-content: space-between;
+}
+
+#sell-office .bot .left{
+    width: 60%;
+}
+
+#sell-office .bot .left h3{
+    margin-bottom: 18px;
+}
+
+#sell-office .bot .left h5{
+    margin-bottom: 55px;
+}
+
+#sell-office .bot .left p{
+    margin-bottom: 30px;
+}
+
+
+/* fine piani business */
 
 
 
 /* seconda sezione */
-.container.second-section{
+.container .second-section{
     display: flex;
 }
 
@@ -275,7 +388,7 @@ header .introduction{
 
 
 /* sezione domande frequenti */
-.container h3{
+.container.faq h3{
     margin-bottom: 70px;
 }
 
@@ -300,6 +413,7 @@ footer{
 
 footer .container-big{
     height: 570px;
+    border: 1px solid green;
     /* test */
 }
 
