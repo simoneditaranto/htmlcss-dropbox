@@ -150,6 +150,10 @@ header .introduction{
     margin-bottom: 50px;
 }
 
+/* input:active{
+    background-color: red;
+} */
+
 .radio-text{
     margin-right: 48px;
 }
@@ -507,14 +511,28 @@ hr{
 }
 
 .questions ul li{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-
     padding-bottom: 45px;
     margin-bottom: 45px;
 
     border-bottom: 1px solid black;
+}
+
+.questions .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.questions ul li:hover .answer{
+    display: inline-block;
+
+    padding-top: 30px;
+
+    font-size: 12px;
+}
+
+.answer{
+    display: none;
 }
 /* fine sezione domande frequenti */
 
@@ -554,7 +572,6 @@ footer #language{
     display: flex;
     align-items: baseline;
     gap: 10px;
-    
 
     padding-bottom: 50px;
 
