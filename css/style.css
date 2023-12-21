@@ -386,8 +386,15 @@ hr{
 
 .container-small .company{
     position: relative;
-
+    
     width: 50%;
+    height: 50%;
+
+    transition: border 0.5s;
+}
+
+.container-small .company:hover{
+    border: 16px solid rgba(255, 255, 255, 0.5);
 }
 
 .container-small.left .company:nth-child(1){
@@ -433,12 +440,29 @@ hr{
     background-color: #FFD830;
 }
 
-.container-small.center{
-    padding: 0 48px;
+.container-small .center{
+    padding: 48px;
+
+    height: 100%;
+
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
-.container-small.center img{
+.container-small .center img{
+    margin-bottom: 50px;
+
     width: 270px;
+}
+
+.container-small .center hr{
+    margin-bottom: 40px;
+
+    border: 1px solid #ECECED;
+}
+
+.container-small .center p{
+    margin-bottom: 52px;
 }
 
 #designit #bottom{
