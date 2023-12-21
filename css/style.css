@@ -36,6 +36,12 @@ ul{
 a{
     text-decoration: none;
 }
+
+.underline{
+    color: #0061FF;
+
+    text-decoration: underline;
+}
 /* fine elementi comuni alla pagina */
 
 
@@ -81,7 +87,7 @@ nav ul li a{
 /* sezione header */
 header{
     margin-top: 30px;
-    margin-bottom: 90px;
+    margin-bottom: 160px;
 
     background-color: #B4D0E7;
 }
@@ -156,20 +162,22 @@ header .introduction{
 }
 
 .type-option{
-    padding: 0 25px;
-
     width: calc(100% / 3 - 48px / 3 * 2);
 
-    border: 1px solid #BEBAB8;
+    border: 1px solid #DDDDDF;
 }
 
-.type-option .type{
+.type-option .option-header{
     padding: 15px;
     margin-bottom: 35px;
 
     text-align: center;
 
-    border-bottom: 1px solid #BEBAB8;
+    border-bottom: 1px solid #DDDDDF;
+}
+
+.type-option .option-body{
+    padding: 0 25px;
 }
 
 .type-option h3{
@@ -213,16 +221,12 @@ header .introduction{
     margin-bottom: 40px;
 }
 
-.type-option .buy a{
-    text-decoration: underline;
-}
-
 hr{
     margin-bottom: 52px;
 
     width: 20%;
 
-    color: #BEBAB8;
+    color: #DDDDDF;
 }
 
 .type-option .highlights-plan{
@@ -244,16 +248,15 @@ hr{
 }
 
 #sell-office{
-    padding: 0 30px;
     margin-bottom: 150px;
 
-    border: 1px solid #BEBAB8;
+    border: 1px solid #DDDDDF;
 }
 
-#sell-office .mini-title{
+#sell-office .top{
     padding: 12px;
     margin-bottom: 45px;
-    border-bottom: 1px solid #BEBAB8;
+    border-bottom: 1px solid #DDDDDF;
 
     text-align: center;
 }
@@ -261,6 +264,8 @@ hr{
 #sell-office .bot{
     display: flex;
     justify-content: space-between;
+
+    padding: 0 30px;
 }
 
 #sell-office .bot .left{
@@ -310,20 +315,24 @@ hr{
 }
 
 .partnership .partner-text .btn{
-    border: 1px solid black;
-
     text-align: center;
 
-    color: black;
+    color: #5C5C5C;
     background-color: white;
+    border: 1px solid #5C5C5C;
+
 }
 /* fine "trova un partner" */
 
 
 
 /* sezione dropbox business */
+.dropbox-business{
+    margin-bottom: 145px;
+}
+
 .dropbox-business h2{
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 }
 
 #business-description{
@@ -351,10 +360,6 @@ hr{
 
     font-size: 32px;
     font-weight: bold;
-}
-
-#underline{
-    text-decoration: underline;
 }
 /* fine dropbox business */
 
